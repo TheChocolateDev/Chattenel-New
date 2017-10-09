@@ -1,0 +1,8 @@
+version: 1.0
+name: Chattenel
+main: me.callmefilms.CNL.CNLFront
+author: CallMeFilms
+commands:
+ channel:
+  description: Base command for Chattenel
+  usage: /channel

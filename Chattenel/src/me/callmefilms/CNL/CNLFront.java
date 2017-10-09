@@ -143,8 +143,10 @@ public class CNLFront extends JavaPlugin{
 				switch(cmd.getName()) {
 				case "channel":
 					if(args.length < 1) {
-//						DISPLAY HELP MENU
-//						PLACEHOLDER COMMENT FOR COMMIT TEST PURPOSES
+						player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
+						player.sendMessage(ChatColor.GOLD + "/channel status:" + ChatColor.YELLOW + "Shows your current channel");
+						player.sendMessage(ChatColor.GOLD + "/channel switch <channel>: " + ChatColor.YELLOW + "Switches your current channel");
+						player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
 					} else {
 						switch(args[0].toLowerCase()) {
 						case "status":
@@ -156,7 +158,9 @@ public class CNLFront extends JavaPlugin{
 							break;
 						case "switch":
 							if(args.length < 2) {
-//								DISPLAY SWITCH HELP MENU
+								player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
+								player.sendMessage(ChatColor.GOLD + "Correct usage: " + ChatColor.YELLOW + "/channel switch <channel>");
+								player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
 							} else {
 								switch(args[1].toLowerCase()) {
 								case "global":
@@ -172,13 +176,22 @@ public class CNLFront extends JavaPlugin{
 									switchChan(player, teamTwo);
 									break;
 								default:
-//									DISPLAY LIST OF CHANNELS
+									player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
+									player.sendMessage(ChatColor.GOLD + "Channels:");
+									player.sendMessage(ChatColor.GOLD + "- " + ChatColor.YELLOW + "global");
+									player.sendMessage(ChatColor.GOLD + "- " + ChatColor.YELLOW + "local");
+									player.sendMessage(ChatColor.GOLD + "- " + ChatColor.YELLOW + "team1");
+									player.sendMessage(ChatColor.GOLD + "- " + ChatColor.YELLOW + "teamTwo");
+									player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
 									break;
 								}
 							}
 							break;
 						default:
-//							DISPLAY HELP MENU
+							player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
+							player.sendMessage(ChatColor.GOLD + "/channel status:" + ChatColor.YELLOW + "Shows your current channel");
+							player.sendMessage(ChatColor.GOLD + "/channel switch <channel>:" + ChatColor.YELLOW + "Switches your current channel");
+							player.sendMessage(ChatColor.GRAY + "[" + ChatColor.YELLOW + "------------" + ChatColor.GRAY + "]");
 						}
 					}
 				}
