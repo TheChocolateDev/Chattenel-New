@@ -144,6 +144,7 @@ public class CNLFront extends JavaPlugin{
 				case "channel":
 					if(args.length < 1) {
 //						DISPLAY HELP MENU
+//						PLACEHOLDER COMMENT FOR COMMIT TEST PURPOSES
 					} else {
 						switch(args[0].toLowerCase()) {
 						case "status":
