@@ -1,4 +1,4 @@
-***Chattenel Bukkit Plugin***
+# **Chattenel Bukkit Plugin**
 
-**Dev List**
-  - **CallMeFilms** - Head Developer
+### **Dev List**
+  #### - CallMeFilms - Head Developer
